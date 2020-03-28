@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your map</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" /><link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+</head>
+<body>
+<div id="mapid" style="width: 100%; height:100%; position: fixed;top: 0;left: 0; height: 100%;"></div><script>
+var map = L.map('mapid').setView([51.505, -0.09], 2);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+maxZoom: 18,
+attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+id: 'mapbox.streets'
+}).addTo(map);
+
+L.marker([-28.8615, 153.55706]).addTo(map).bindPopup("Bentinck Street").openPopup();
+L.marker([-43.5, 171.5]).addTo(map).bindPopup("Canterbury").openPopup();
+L.marker([49.9216, 1.07772]).addTo(map).bindPopup("Dieppe").openPopup();
+L.marker([52.16045, -0.70312]).addTo(map).bindPopup("England").openPopup();
+L.marker([46.20222, 6.14569]).addTo(map).bindPopup("Geneva").openPopup();
+L.marker([46.31736, 7.63412]).addTo(map).bindPopup("Leuk").openPopup();
+L.marker([38.98872, -78.35862]).addTo(map).bindPopup("Strasburg").openPopup();
+L.marker([63.0, 12.0]).addTo(map).bindPopup("Scandinavia").openPopup();
+L.marker([46.72709, 8.1872]).addTo(map).bindPopup("Meiringen").openPopup();
+L.marker([46.41307, 7.62022]).addTo(map).bindPopup("Daubensee").openPopup();
+L.marker([49.75, 6.16667]).addTo(map).bindPopup("Luxembourg").openPopup();
+L.marker([53.66667, -7.48333]).addTo(map).bindPopup("Street").openPopup();
+L.marker([46.0, 2.0]).addTo(map).bindPopup("France").openPopup();
+L.marker([46.68387, 7.86638]).addTo(map).bindPopup("Interlaken").openPopup();
+L.marker([47.05048, 8.30635]).addTo(map).bindPopup("Lucerne").openPopup();
+L.marker([43.18396, 3.00141]).addTo(map).bindPopup("Narbonne").openPopup();
+L.marker([4.0664, 43.1459]).addTo(map).bindPopup("Basle").openPopup();
+L.marker([50.85045, 4.34878]).addTo(map).bindPopup("Brussels").openPopup();
+L.marker([-33.879, 151.215]).addTo(map).bindPopup("Oxford Street").openPopup();
+L.marker([51.52322, -0.15778]).addTo(map).bindPopup("Baker Street").openPopup();
+L.marker([48.69096, 9.14062]).addTo(map).bindPopup("Europe").openPopup();
+L.marker([-4.62001, 55.45501]).addTo(map).bindPopup("Victoria").openPopup();
+L.marker([53.32723, -3.83555]).addTo(map).bindPopup("Victoria Station").openPopup();
+L.marker([47.00016, 8.01427]).addTo(map).bindPopup("Switzerland").openPopup();
+L.marker([-41.46341, 146.17726]).addTo(map).bindPopup("Kentish").openPopup();
+L.marker([-38.51211, 145.35582]).addTo(map).bindPopup("Newhaven").openPopup();
+L.marker([51.50853, -0.12574]).addTo(map).bindPopup("London").openPopup();
+L.marker([46.67959, 8.15389]).addTo(map).bindPopup("Rosenlaui").openPopup();
+L.marker([33.12351, -90.09205]).addTo(map).bindPopup("Holmes").openPopup();
+L.marker([48.85341, 2.3488]).addTo(map).bindPopup("Paris").openPopup();
+</script>
+</body>
+</html>
